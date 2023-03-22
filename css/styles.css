@@ -65,17 +65,18 @@
 }
 
 /*fin navegador*/
+/*portada*/
 .portada{
     width: 100%;
     background-image: url(../multimedia/img/camion-carretera.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment:fixed;
     height: 300px;
     
 }
 .img a{
-    font-size: 50px;
+    font-size: 40px;
 }
 .contenido p{
     margin: 10px;
@@ -86,13 +87,16 @@
     margin: 10px;
     font-family:Arial, Helvetica, sans-serif;  ;
 }
-
+/* portada*/
 .titulo{
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 40px;
     color: blue;
 }
+
+/*fin portada*/
 .titulo1{
     background-color: white;
     color: blue;
@@ -103,6 +107,7 @@
 
 /*servicios*/
 h1{
+    padding: 10px;
     margin: 10px;
     text-align: start;
     font-size: 50px;
@@ -124,15 +129,21 @@ h1{
 }
 
 /*rutas*/
+
 .padre{
     display: grid;
     width: 100%;
-    grid-template-columns: 2fr 2fr;
-    column-gap: 10px;
+    grid-template-columns: 4fr 2fr;
+    row-gap: 20px;
+    column-gap: 20px;
     justify-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    align-items: center;
+    margin-left: 10px 10px;
+    padding: 10px;
 
+
+}
 
 /*formularios de contactos*/
 .formulario{
@@ -192,7 +203,7 @@ h1{
     padding: 10px;
     font-size: 20px;
 }
-@media(max-width:750px){
+@media(max-width:700px){
     .formulario{
         width: auto;
         margin: 40px 0px;
@@ -222,9 +233,11 @@ h1{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
+    margin: 0px;
    
 }
 .footer .compania{
+    width: 500px;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -232,9 +245,12 @@ h1{
 .footer .compania .redes a i{
     color: white;
     font-size: 28px;
-
 }
-
+.footer .direccion h3 p{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
 /*fin footer*/
 
 
