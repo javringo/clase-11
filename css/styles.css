@@ -39,6 +39,7 @@
     .navegador .fa-bars{
         display: block;
         font-size: 32px;
+        
         margin: 20px;
         color: white;
     }
@@ -114,9 +115,9 @@ h1{
 }
 .titulo1 h2{
     width: 800px;
-    background-color: #a81d1d;
     justify-content:space-around;
     align-items: start;
+    
 }
 .contenedor-cajas{
     font-size:xx-large;
