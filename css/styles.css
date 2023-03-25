@@ -1,275 +1,266 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*navegador*/
-.navegador{
-    background-color: blue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navegador {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.navegador .logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
-.navegador .logo{
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
+
+.navegador ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
 }
-.navegador ul{
-    list-style: none;
-    display:flex;
-    justify-content: end;
-    
+
+.navegador ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 16px 8px;
+  list-style: none;
+  align-items: end;
+  justify-content: center;
 }
-.navegador ul li a{
+
+.navegador .fa-bars {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .navegador .fa-bars {
     display: block;
+    font-size: 32px;
+    margin: 10px;
     color: white;
-    text-decoration: none;
-    font-size: 15px;
-    padding: 16px 8px;
-    list-style: none;
-    align-items: end;
-    justify-content: center;
+  }
+  .navegador .fa-bars:hover + ul {
+    right: 0;
+  }
+  .navegador ul {
+    right: -350px;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    width: 250px;
+    height: 100vh;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .navegador ul li a {
+    color: black;
+  }
 }
-.navegador .fa-bars{
-    display: none;
-    
-}
-@media(max-width:550px){
-    .navegador .fa-bars{
-        display: block;
-        font-size: 32px;
-        
-        margin: 20px;
-        color: white;
-    }
-    .navegador .fa-bars:hover + ul{
-        right: 0;
-       
-    }
-    .navegador ul{
-        right: -350px;
-        top: 0;
-        position: fixed;
-        background-color: white;
-        width: 250px;
-        height: 100vh;
-        z-index: 5;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        transition: 0.5s;
-    }
-    .navegador ul li a{
-        color: black;
-    }
-}
-
 /*fin navegador*/
 /*portada*/
-.portada{
-    width: 100%;
-    background-image: url(../multimedia/img/camion-carretera.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
-    height: 300px;
-    
-}
-.img a{
-    margin-top: 0;
-    font-size: 40px;
-}
-.contenido p{
-    margin: 10px;
-    font-family:Arial, Helvetica, sans-serif;
+.portada {
+  width: 100%;
+  background-image: url(../multimedia/img/camion-carretera.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
 }
 
-.contenido1 p{
-    margin: 10px;
-    font-family:Arial, Helvetica, sans-serif;  ;
+.img a {
+  margin-top: 0;
+  font-size: 40px;
 }
+
+.contenido p {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido1 p {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* portada*/
-.titulo{
-    margin-top: 0;
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 40px;
-    color: blue;
+.titulo {
+  margin-top: 0;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 40px;
+  color: blue;
 }
 
 /*fin portada*/
-.titulo1{
-    padding: 0;
-    background-color: white;
-    color: blue;
-    font-family: 'Roboto', sans-serif;
-    text-align: start;
-    font-size: 30px;
+.titulo1 {
+  padding: 0;
+  background-color: white;
+  color: blue;
+  font-family: "Roboto", sans-serif;
+  text-align: start;
+  font-size: 30px;
 }
 
 /*servicios*/
-h1{
-    padding: 10px;
-    margin: 10px;
-    text-align: start;
-    font-size: 50px;
+h1 {
+  padding: 10px;
+  margin: 10px;
+  text-align: start;
+  font-size: 50px;
 }
-.titulo1 h2{
-    margin-left: 10px;
-    width: 800px;
-    justify-content:space-around;
-    align-items: start;
-    
+
+.titulo1 h2 {
+  margin-left: 10px;
+  width: 800px;
+  justify-content: space-around;
+  align-items: start;
 }
-.contenedor-cajas{
-    font-size:xx-large;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    color: white;
+
+.contenedor-cajas {
+  font-size: xx-large;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: white;
 }
 
 /*rutas*/
-
-.padre{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 4fr 2fr;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    align-items: center;
-    margin-left: 10px 10px;
-    padding: 10px;
-
+.padre {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 4fr 2fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  margin-left: 10px 10px;
+  padding: 10px;
 }
 
 /*formularios de contactos*/
-.formulario{
-    width: 700px;
-    background-color: blue;
-    margin: 40px auto;
-    border-radius: 5px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "contactanos  contactanos"
-                         "nombre        email"
-                         "telefono      asunto"
-                         "mensaje        mensaje"
-                         "boton          boton";
-       
+.formulario {
+  width: 700px;
+  background-color: blue;
+  margin: 40px auto;
+  border-radius: 5px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contactanos  contactanos" "nombre        email" "telefono      asunto" "mensaje        mensaje" "boton          boton";
 }
-.formulario h2{
-    grid-area: contactanos;
-    color: white;
-    padding: 10px;
+
+.formulario h2 {
+  grid-area: contactanos;
+  color: white;
+  padding: 10px;
 }
-.formulario label{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 10px;
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
 }
-.formulario label input , .formulario label textarea{
-    background-color: blue;
-    border: none;
-    border-bottom: 1px solid white;
-    padding: 10px;
-    color: white;
+
+.formulario label input, .formulario label textarea {
+  background-color: blue;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  color: white;
 }
-.formulario label:nth-child(2){
-    grid-area: nombre;
+
+.formulario label:nth-child(2) {
+  grid-area: nombre;
 }
-.formulario label:nth-child(3){
-    grid-area: email;
+
+.formulario label:nth-child(3) {
+  grid-area: email;
 }
-.formulario label:nth-child(4){
-    grid-area: telefono;
+
+.formulario label:nth-child(4) {
+  grid-area: telefono;
 }
-.formulario label:nth-child(5){
-    grid-area: asunto;
+
+.formulario label:nth-child(5) {
+  grid-area: asunto;
 }
-.formulario label:nth-child(6){
-    grid-area: mensaje;
+
+.formulario label:nth-child(6) {
+  grid-area: mensaje;
 }
-.formulario button{
-    grid-area: boton;
-    background-color: white;
-    color: blue;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
+
+.formulario button {
+  grid-area: boton;
+  background-color: white;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
 }
-@media(max-width:700px){
-    .formulario{
-        width: auto;
-        margin: 40px 0px;
-        border-radius: none;
-        grid-template-areas: "contactanos  contactanos"
-                             "nombre        nombre"
-                             "email         email"
-                             "telefono      telefono"
-                             "asunto        asunto"
-                             "mensaje       mensaje"
-                             "boton          boton";
-           
-    }
+
+@media (max-width: 700px) {
+  .formulario {
+    width: auto;
+    margin: 40px 0px;
+    border-radius: none;
+    grid-template-areas: "contactanos  contactanos" "nombre        nombre" "email         email" "telefono      telefono" "asunto        asunto" "mensaje       mensaje" "boton          boton";
+  }
 }
 /* mapa ubicacion*/
-.mapa .ubicacion .iframe{
-    justify-content: end;
-    text-align: end;
+.mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /*footer*/
-.footer{
-    
-    background-color: blue;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 0px;
-   
+.footer {
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0px;
 }
-.footer .compania{
-    width: 500px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
+
+.footer .compania {
+  width: 500px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.footer .compania .redes a i{
-    color: white;
-    font-size: 28px;
+
+.footer .compania .redes a i {
+  color: white;
+  font-size: 28px;
 }
-.footer .direccion h3 p{
-    color: white;
-    margin: 10px;
-    padding: 10px;
+
+.footer .direccion h3 p {
+  color: white;
+  margin: 10px;
+  padding: 10px;
 }
+
 /*fin footer*/
 
-
-
-    
-    
-    
-
-
-
-
-
-
-
+/*# sourceMappingURL=styles.css.map */
