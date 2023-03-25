@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .navegador .logo{
     width: 80px;
@@ -18,18 +19,20 @@
     object-fit: cover;
 }
 .navegador ul{
-    display:flex;
     list-style: none;
+    display:flex;
     justify-content: end;
+    
 }
 .navegador ul li a{
     display: block;
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 20px 10px;
+    font-size: 15px;
+    padding: 16px 8px;
     list-style: none;
     align-items: end;
+    justify-content: center;
 }
 .navegador .fa-bars{
     display: none;
@@ -77,6 +80,7 @@
     
 }
 .img a{
+    margin-top: 0;
     font-size: 40px;
 }
 .contenido p{
@@ -90,15 +94,18 @@
 }
 /* portada*/
 .titulo{
-    
+    margin-top: 0;
+    padding: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 40px;
+    font-weight: 40px;
     color: blue;
 }
 
 /*fin portada*/
 .titulo1{
+    padding: 0;
     background-color: white;
     color: blue;
     font-family: 'Roboto', sans-serif;
@@ -114,6 +121,7 @@ h1{
     font-size: 50px;
 }
 .titulo1 h2{
+    margin-left: 10px;
     width: 800px;
     justify-content:space-around;
     align-items: start;
@@ -142,7 +150,6 @@ h1{
     align-items: center;
     margin-left: 10px 10px;
     padding: 10px;
-
 
 }
 
