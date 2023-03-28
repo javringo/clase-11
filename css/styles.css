@@ -225,6 +225,12 @@ h1 {
   }
 }
 /* mapa ubicacion*/
+.titulo h3 {
+  display: flex;
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .mapa {
   display: flex;
   align-items: center;
