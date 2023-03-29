@@ -7,7 +7,7 @@
 
 /*navegador*/
 .navegador {
-  background-color: blue;
+  background-color: #1c448e;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,7 @@
 
 .navegador ul li a {
   display: block;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 15px;
   padding: 16px 8px;
@@ -45,7 +45,7 @@
     display: block;
     font-size: 32px;
     margin: 10px;
-    color: white;
+    color: #ffffff;
   }
   .navegador .fa-bars:hover + ul {
     right: 0;
@@ -54,7 +54,7 @@
     right: -350px;
     top: 0;
     position: fixed;
-    background-color: white;
+    background-color: #ffffff;
     width: 250px;
     height: 100vh;
     z-index: 5;
@@ -101,14 +101,14 @@
   text-align: center;
   font-size: 40px;
   font-weight: 40px;
-  color: blue;
+  color: #1c448e;
 }
 
 /*fin portada*/
 .titulo1 {
   padding: 0;
-  background-color: white;
-  color: blue;
+  background-color: #ffffff;
+  color: #1c448e;
   font-family: "Roboto", sans-serif;
   text-align: start;
   font-size: 30px;
@@ -136,7 +136,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 /*rutas*/
@@ -156,7 +156,7 @@ h1 {
 /*formularios de contactos*/
 .formulario {
   width: 700px;
-  background-color: blue;
+  background-color: #1c448e;
   margin: 40px auto;
   border-radius: 5px;
   padding: 20px;
@@ -167,23 +167,24 @@ h1 {
 
 .formulario h2 {
   grid-area: contactanos;
-  color: white;
+  color: #ffffff;
   padding: 10px;
 }
 
 .formulario label {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #ffffff;
   padding: 10px;
 }
 
-.formulario label input, .formulario label textarea {
-  background-color: blue;
+.formulario label input,
+.formulario label textarea {
+  background-color: #1c448e;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffff;
   padding: 10px;
-  color: white;
+  color: #ffffff;
 }
 
 .formulario label:nth-child(2) {
@@ -208,8 +209,8 @@ h1 {
 
 .formulario button {
   grid-area: boton;
-  background-color: white;
-  color: blue;
+  background-color: #ffffff;
+  color: #1c448e;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -227,7 +228,7 @@ h1 {
 /* mapa ubicacion*/
 .titulo h3 {
   display: flex;
-  color: blue;
+  color: #1c448e;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -240,8 +241,8 @@ h1 {
 
 /*footer*/
 .footer {
-  background-color: blue;
-  color: white;
+  background-color: #1c448e;
+  color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -257,12 +258,12 @@ h1 {
 }
 
 .footer .compania .redes a i {
-  color: white;
+  color: #ffffff;
   font-size: 28px;
 }
 
 .footer .direccion h3 p {
-  color: white;
+  color: #ffffff;
   margin: 10px;
   padding: 10px;
 }
