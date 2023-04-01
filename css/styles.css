@@ -12,19 +12,16 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .navegador .logo {
   width: 80px;
   height: 80px;
   object-fit: cover;
 }
-
 .navegador ul {
   list-style: none;
   display: flex;
   justify-content: end;
 }
-
 .navegador ul li a {
   display: block;
   color: #ffffff;
@@ -35,7 +32,6 @@
   align-items: end;
   justify-content: center;
 }
-
 .navegador .fa-bars {
   display: none;
 }
@@ -46,9 +42,6 @@
     font-size: 32px;
     margin: 10px;
     color: #ffffff;
-  }
-  .navegador .fa-bars:hover + ul {
-    right: 0;
   }
   .navegador ul {
     right: -350px;
@@ -66,9 +59,12 @@
   .navegador ul li a {
     color: black;
   }
+  .navegador .fa-bars:hover + ul {
+    right: 0;
+  }
 }
 /*fin navegador*/
-/*portada*/
+/* inicio portada*/
 .portada {
   width: 100%;
   background-image: url(../multimedia/img/camion-carretera.jpg);
@@ -88,12 +84,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.contenido1 p {
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* portada*/
 .titulo {
   margin-top: 0;
   padding: 5px;
@@ -102,6 +92,11 @@
   font-size: 40px;
   font-weight: 40px;
   color: #1c448e;
+}
+.titulo h3 {
+  display: flex;
+  color: #1c448e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*fin portada*/
@@ -113,6 +108,12 @@
   text-align: start;
   font-size: 30px;
 }
+.titulo1 h2 {
+  margin-left: 10px;
+  width: 800px;
+  justify-content: space-around;
+  align-items: start;
+}
 
 /*servicios*/
 h1 {
@@ -120,13 +121,6 @@ h1 {
   margin: 10px;
   text-align: start;
   font-size: 50px;
-}
-
-.titulo1 h2 {
-  margin-left: 10px;
-  width: 800px;
-  justify-content: space-around;
-  align-items: start;
 }
 
 .contenedor-cajas {
@@ -153,6 +147,13 @@ h1 {
   padding: 10px;
 }
 
+.mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /*formularios de contactos*/
 .formulario {
   width: 700px;
@@ -164,49 +165,11 @@ h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "contactanos  contactanos" "nombre        email" "telefono      asunto" "mensaje        mensaje" "boton          boton";
 }
-
 .formulario h2 {
   grid-area: contactanos;
   color: #ffffff;
   padding: 10px;
 }
-
-.formulario label {
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-  padding: 10px;
-}
-
-.formulario label input,
-.formulario label textarea {
-  background-color: #1c448e;
-  border: none;
-  border-bottom: 1px solid #ffffff;
-  padding: 10px;
-  color: #ffffff;
-}
-
-.formulario label:nth-child(2) {
-  grid-area: nombre;
-}
-
-.formulario label:nth-child(3) {
-  grid-area: email;
-}
-
-.formulario label:nth-child(4) {
-  grid-area: telefono;
-}
-
-.formulario label:nth-child(5) {
-  grid-area: asunto;
-}
-
-.formulario label:nth-child(6) {
-  grid-area: mensaje;
-}
-
 .formulario button {
   grid-area: boton;
   background-color: #ffffff;
@@ -215,6 +178,32 @@ h1 {
   border-radius: 5px;
   padding: 10px;
   font-size: 20px;
+}
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 10px;
+}
+.formulario label input,
+.formulario label textarea {
+  background-color: #1c448e;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px;
+  color: #ffffff;
+}
+.formulario label:nth-child(2) {
+  grid-area: nombre;
+}
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+.formulario label:nth-child(5) {
+  grid-area: asunto;
+}
+.formulario label:nth-child(6) {
+  grid-area: mensaje;
 }
 
 @media (max-width: 700px) {
@@ -225,20 +214,6 @@ h1 {
     grid-template-areas: "contactanos  contactanos" "nombre        nombre" "email         email" "telefono      telefono" "asunto        asunto" "mensaje       mensaje" "boton          boton";
   }
 }
-/* mapa ubicacion*/
-.titulo h3 {
-  display: flex;
-  color: #1c448e;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.mapa {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 /*footer*/
 .footer {
   background-color: #1c448e;
@@ -249,23 +224,20 @@ h1 {
   padding: 10px;
   margin: 0px;
 }
-
+.footer .direccion h3 p {
+  color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+}
 .footer .compania {
   width: 500px;
   gap: 10px;
   display: flex;
   flex-direction: column;
 }
-
 .footer .compania .redes a i {
   color: #ffffff;
   font-size: 28px;
-}
-
-.footer .direccion h3 p {
-  color: #ffffff;
-  margin: 10px;
-  padding: 10px;
 }
 
 /*fin footer*/
