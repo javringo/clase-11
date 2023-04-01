@@ -1,5 +1,5 @@
 /* varibles */
-$primary-color: #1c448e;
+$primary-color: blue;
 $secondary-color: #540b0e;
 $third-color: #9e2a2b;
 $background: #ffffff;
@@ -48,11 +48,9 @@ $background: #ffffff;
 
 @media (max-width: 550px) {
   .navegador {
-    // background-color: #540b0e;
-    .fa-bars {
+     .fa-bars {
       display: block;
       font-size: 32px;
-
       margin: 10px;
       color: $background;
     }
@@ -109,6 +107,7 @@ $background: #ffffff;
   color: $primary-color;
 
   h3 {
+      
       display: flex;
       color: $primary-color;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
