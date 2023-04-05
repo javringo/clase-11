@@ -1,17 +1,155 @@
-/* Error: Undefined mixin.
- *    ,
- * 20 |   @include titulo-font-style;
- *    |   ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\styles.scss 20:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 20 \2502    @include titulo-font-style;\d\a    \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\styles.scss 20:3  root stylesheet";
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.titulo1 {
+  padding: 0;
+  background-color: #ffffff;
+  text-align: start;
+  font-size: 30px;
+}
+.titulo1 h2 {
+  margin-left: 10px;
+  width: 800px;
+  justify-content: space-around;
+  align-items: start;
+}
+
+/*servicios*/
+h1 {
+  padding: 10px;
+  margin: 10px;
+  text-align: start;
+  font-size: 50px;
+}
+
+.contenedor-cajas {
+  font-size: xx-large;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: #ffffff;
+}
+
+/*rutas*/
+.padre {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 4fr 2fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  margin-left: 10px 10px;
+  padding: 10px;
+}
+
+.mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*formularios de contactos*/
+.formulario {
+  width: 700px;
+  background-color: blue;
+  margin: 40px auto;
+  border-radius: 5px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contactanos  contactanos" "nombre        email" "telefono      asunto" "mensaje        mensaje" "boton          boton";
+}
+.formulario h2 {
+  grid-area: contactanos;
+  color: #ffffff;
+  padding: 10px;
+}
+.formulario button, .formulario .button-desactivado, .formulario .button-activado {
+  grid-area: boton;
+  background-color: #ffffff;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+.formulario .button-activado {
+  color: #540b0e;
+}
+.formulario .button-desactivado {
+  color: gray;
+}
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 10px;
+}
+.formulario label input,
+.formulario label textarea {
+  background-color: blue;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px;
+  color: #ffffff;
+}
+.formulario label:nth-child(2) {
+  grid-area: nombre;
+}
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+.formulario label:nth-child(5) {
+  grid-area: asunto;
+}
+.formulario label:nth-child(6) {
+  grid-area: mensaje;
+}
+
+@media (max-width: 700px) {
+  .formulario {
+    width: auto;
+    margin: 40px 0px;
+    border-radius: none;
+    grid-template-areas: "contactanos  contactanos" "nombre        nombre" "email         email" "telefono      telefono" "asunto        asunto" "mensaje       mensaje" "boton          boton";
+  }
+}
+/*footer*/
+.footer {
+  background-color: blue;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0px;
+}
+.footer .direccion h3 p {
+  color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+}
+.footer .compania {
+  width: 500px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .compania .redes a i {
+  color: #ffffff;
+  font-size: 28px;
+}
+
+/*fin footer*/
+
+/*# sourceMappingURL=styles.css.map */
