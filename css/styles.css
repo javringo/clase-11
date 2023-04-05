@@ -88,26 +88,26 @@
 .titulo {
   margin-top: 0;
   padding: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-size: 40px;
   font-weight: 40px;
+  font-family: "Roboto", sans-serif;
   color: blue;
 }
 .titulo h3 {
   display: flex;
+  font-family: "Roboto", sans-serif;
   color: blue;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*fin portada*/
 .titulo1 {
   padding: 0;
   background-color: #ffffff;
-  color: blue;
-  font-family: "Roboto", sans-serif;
   text-align: start;
   font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  color: blue;
 }
 .titulo1 h2 {
   margin-left: 10px;
@@ -171,7 +171,7 @@ h1 {
   color: #ffffff;
   padding: 10px;
 }
-.formulario button {
+.formulario button, .formulario .button-desactivado, .formulario .button-activado {
   grid-area: boton;
   background-color: #ffffff;
   color: blue;
@@ -179,6 +179,12 @@ h1 {
   border-radius: 5px;
   padding: 10px;
   font-size: 20px;
+}
+.formulario .button-activado {
+  color: #540b0e;
+}
+.formulario .button-desactivado {
+  color: gray;
 }
 .formulario label {
   display: flex;

@@ -97,30 +97,34 @@ $background: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@mixin titulo-font-style {
+  font-family: "Roboto",
+    sans-serif;
+  color: $primary-color;
+}
+
 .titulo {
   margin-top: 0;
   padding: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-size: 40px;
   font-weight: 40px;
-  color: $primary-color;
+
+  @include titulo-font-style;
 
   h3 {
       display: flex;
-      color: $primary-color;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+      @include titulo-font-style;
+  }
 }
 
 /*fin portada*/
 .titulo1 {
   padding: 0;
   background-color: $background;
-  color: $primary-color;
-  font-family: "Roboto", sans-serif;
   text-align: start;
   font-size: 30px;
+  @include titulo-font-style;
 
   h2 {
     margin-left: 10px;
@@ -200,6 +204,17 @@ h1 {
     padding: 10px;
     font-size: 20px;
   }
+
+  .button-activado {
+    @extend button;
+    color: $secondary-color;
+  }
+
+  .button-desactivado {
+    @extend button;
+    color: gray;
+  }
+
   label {
     display: flex;
     flex-direction: column;
