@@ -1,0 +1,69 @@
+/*navegador*/
+
+.navegador {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: end;
+  
+      li a {
+        display: block;
+        color: $background;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 16px 8px;
+        list-style: none;
+        align-items: end;
+        justify-content: center;
+      }
+    }
+  
+    .fa-bars {
+      display: none;
+    }
+  }
+  
+  @media(max-width: 570px) {
+    .navegador {
+       .fa-bars {
+        display: block;
+        font-size: 32px;
+        margin: 10px;
+        color: $background;
+      }
+  
+      ul {
+        right: -350px;
+        top: 0;
+        position: fixed;
+        background-color: $background;
+        width: 250px;
+        height: 100vh;
+        z-index: 5;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        transition: 0.5s;
+        li a {
+          color: black;
+        }
+      }
+  
+      .fa-bars:hover + ul {
+        right: 0;
+      }
+    }
+  }
+  
+  /*fin navegador*/
