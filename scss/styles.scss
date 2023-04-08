@@ -11,7 +11,7 @@
   background-color: $background;
   text-align: start;
   font-size: 30px;
-  @include titulo-font-style;git
+  @include titulo-font-style;
 
   h2 {
     margin-left: 10px;
@@ -29,6 +29,8 @@ h1 {
   font-size: 50px;
 }
 
+
+
 .contenedor-cajas {
   font-size: xx-large;
   display: flex;
@@ -40,18 +42,7 @@ h1 {
 }
 
 /*rutas*/
-.padre {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 4fr 2fr;
-  row-gap: 20px;
-  column-gap: 20px;
-  justify-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  align-items:end;
-  margin-left: 10px 10px;
-  padding: 10px;
-}
+
 
 .mapa {
   display: flex;
